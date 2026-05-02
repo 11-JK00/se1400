@@ -55,7 +55,7 @@ header {
 
 .socials{
     display: flex;
-    transform: translateX(-1px);
+    transform: translateX(-50px);
     gap: 0.5rem;
     justify-content: space-around;
     font-size: 3rem;
