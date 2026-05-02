@@ -56,7 +56,10 @@ header {
     height: 200px;
     border-radius: 8px;
     padding: 20px;
+
+
 }
+
 
 .navbar{
     grid-row: 1/2;
@@ -264,7 +267,7 @@ footer {
 }
 
 /*-----Media--Query------*/
-@media (min-width:816px){
+@media (min-width:1040px){
     .categories{
         padding: 60px;
         justify-items: center;
@@ -296,7 +299,7 @@ footer {
     }
 
     .socials{
-        transform: translateX(-300%);
+        transform: translateX(-200%);
     }
 
     }
@@ -310,15 +313,17 @@ footer {
 
 
 
-@media (min-width:420px){
+@media (min-width:520px){
 
         .categories{
         padding: 60px;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
+
         .c-cards{
-            width: 600px;
+            width: 720px;
         }
+        
     }
 
 
