@@ -1,5 +1,5 @@
 
-
+/*----basics----*/
 :root{
     --Primary-color: #0f4c5c;
     --primary-accent: #53656a;
@@ -21,6 +21,8 @@ body{
      display: grid;
      grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
+
+/*==============================================================*/
 
 header {
     grid-column: 1/-1;
@@ -108,7 +110,28 @@ header {
 }
 
 nav {
+    
     display: none;
+    & ul{
+        list-style: none;
+        display: flex;
+        gap: 1em;
+        
+
+        & li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 400px;
+
+            &:hover{
+                color: var(--secondary-accent);
+                border-bottom: 2px solid var(--secondary-accent);
+                transform: scale(1.5);
+            }
+        }
+    }
+
+
 }
 
 .hero-content{
@@ -161,15 +184,17 @@ main {
     text-align: center;
     height: 400px;
     max-width: 300px;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     align-content: center;
+ 
 
     .cards-overlay{
         
         background-size: cover;
         height: 400px;
         align-content: center;
+        border-radius: 8px;
         transition: background-color 0.5s ease-in;
         transition: color 0.5s ease;
 
@@ -238,8 +263,8 @@ footer {
     color: var(--primary-accent);
 }
 
-
-@media (min-width:720px){
+/*-----Media--Query------*/
+@media (min-width:816px){
     .categories{
         padding: 60px;
         justify-items: center;
@@ -265,9 +290,28 @@ footer {
 
     nav{
         display: block;
+        & ul li a{
+            font-size: larger;
+        }
     }
 
+    .socials{
+        transform: translateX(-100%);
+    }
 
+    }
+.c-cards{
+           border-radius: 50px;
+           transition: transform 0.2s ease;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    }
 
+}
 
+@media (min-width:420px){
+    .socials{
+        transform: translateX(50%);
+    }
 }
