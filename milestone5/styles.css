@@ -65,9 +65,11 @@ header {
     padding: 20px;
     background: var(--Primary-color);
 }
+.logo a{
+    text-decoration: none;
+    color: white;
 
-
-.logo h3{
+& h3{
     background-color: var(--Secondary-color);
     padding: 1.5rem;
     border-radius: 8px;
@@ -75,6 +77,10 @@ header {
     font-weight: 700px;
 
 }
+
+}
+
+
 
 
 
@@ -138,9 +144,20 @@ nav {
 main {
     background: rgba(217, 37, 217, .3);
     margin: 1.5rem;
-    height: 400px;
     grid-column: 2/-2;
     border-radius: 8px;
+}
+
+.categories{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+}
+.c-cards {
+    background: #e36414;
+    text-align: center;
+    padding: 100px;
 }
 
 footer {
