@@ -296,7 +296,7 @@ footer {
     }
 
     .socials{
-        transform: translateX(-100%);
+        transform: translateX(-300%);
     }
 
     }
@@ -308,10 +308,19 @@ footer {
     }
     }
 
-}
+
 
 @media (min-width:420px){
-    .socials{
-        transform: translateX(50%);
+
+        .categories{
+        padding: 60px;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        .c-cards{
+            width: 600px;
+        }
     }
+
+
+
 }
