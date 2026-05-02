@@ -40,6 +40,27 @@ header {
     background:linear-gradient(to top, rgba(48, 125, 146, 1), rgba(48, 125, 146, 0.2));
     backdrop-filter: blur(0.8);
 }
+.pro-pic {
+    background-image: url(pro-pic.jpg);
+    background-position: center;
+    background-clip: border-box;
+    background-size: cover;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+
+
+
+&.pro-pic img{
+    max-width: 300px;
+    min-width: 100px;
+    width: 300px;
+    height: 200;
+    align-self: center;
+}
+}
+
 .navbar{
     grid-row: 1/2;
     grid-column: 1/-1;
