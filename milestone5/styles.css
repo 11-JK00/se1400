@@ -153,12 +153,34 @@ main {
     gap: 1rem;
     grid-template-columns: 1fr;
     padding: 1.5rem;
-}
-.c-cards {
+    
+    .c-cards {
     background: #e36414;
     text-align: center;
-    padding: 100px;
+    height: 400px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+    & a{
+        text-decoration: none;
+        color: white;
+        font-weight: 700px;
+
+    }
+
+    
+
 }
+
+& .p{
+        background: url(SaveGram.App_614967238_18075802769458391_8697356239004427116_n.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+
+}
+
 
 footer {
     background: rgba(217, 255, 50, 0.3);
