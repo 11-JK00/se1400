@@ -1,3 +1,12 @@
+
+
+:root{
+    --Primary-color: #0f4c5c;
+    --Secondary-color: #e36414;
+}
+
+
+html{scroll-behavior: smooth;}
 body{
     box-sizing: border-box;
     margin: 0;
@@ -29,10 +38,28 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background: var(--Primary-color);
 }
 
+
+.logo h3{
+    background-color: var(--Secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-style: italic;
+    font-weight: 700px;
+
+}
+
+
+
 .socials{
-    transform: translateX(-1.5rem);
+    display: flex;
+    transform: translateX(-1px);
+    gap: 0.5rem;
+    justify-content: space-around;
+    font-size: 3rem;
+    
 }
 
 .hamburger {
