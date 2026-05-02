@@ -24,7 +24,7 @@ header {
     grid-column: 1/-1;
     display: grid;
     background: url(Lego\ Ferrari.jpg);
-    height: 600px;
+    height: 800px;
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr auto 1fr;
     color: white;
@@ -33,12 +33,15 @@ header {
 .hero-overlay {
         grid-column: 1/-1;
     display: grid;
-    height: 600px;
+    height: 800px;
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr auto 1fr;
     color: white;
     background:linear-gradient(to top, rgba(48, 125, 146, 1), rgba(48, 125, 146, 0.2));
     backdrop-filter: blur(0.8);
+}
+.pro-pic-container{
+    padding: 20px;
 }
 .pro-pic {
     background-image: url(pro-pic.jpg);
@@ -46,19 +49,10 @@ header {
     background-clip: border-box;
     background-size: cover;
     overflow: hidden;
-    width: 300px;
+    max-width: 300px;
     height: 200px;
     border-radius: 8px;
-
-
-
-&.pro-pic img{
-    max-width: 300px;
-    min-width: 100px;
-    width: 300px;
-    height: 200;
-    align-self: center;
-}
+    padding: 20px;
 }
 
 .navbar{
@@ -136,7 +130,7 @@ nav {
 
     h2 {
        color: var(--Secondary-color);
-        font-weight: 500px;
+        font-weight: 5rem;
     }
   
 }
