@@ -66,6 +66,12 @@ header {
     display: flex;
     flex-direction: column;
     color:white;
+    gap: 1em;
+    & span{
+        border-bottom: 2px solid white;
+        width: 2rem;
+        gap: 1em;
+    }
 }
 
 nav {
