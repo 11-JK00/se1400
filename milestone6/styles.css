@@ -356,10 +356,6 @@ footer {
         }
     }
 
-    .fod-icon p{
-        display: none;
-    }
-
 }
 
 @media (max-width: 768px){
