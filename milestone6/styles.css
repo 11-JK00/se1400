@@ -351,6 +351,9 @@ footer {
 @media (max-width:992px){
     .hero-content{
         border-radius: 16px;
+        .pro-pic{
+            max-width: 250px;
+        }
     }
 
     .fod-icon p{
@@ -381,5 +384,7 @@ footer {
     flex-direction: column;
 
 }
+
+
     
 }
