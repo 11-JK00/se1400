@@ -29,17 +29,14 @@
         }
     }
 
-    .socials{
-        transform: translateX(-200%);
-    }
 
     }
-.c-cards{
+
+    .c-cards{
            border-radius: 50px;
            transition: transform 0.2s ease;
     &:hover{
         transform: translateY(-5px);
-    }
     }
 
 
@@ -57,4 +54,23 @@
 
 
 
+}
+
+
+==========================================================
+============================================================
+============================================================
+
+.hero-content{
+    grid-column: 2/3;
+    grid-row: 2/2;
+    background: white;
+    justify-self: center;
+    align-self: center;
+    width: 85vw;
+    border-radius: 16px;
+    z-index: 100;
+    color: black;
+    margin: 1.5rem;
+    
 }

@@ -71,6 +71,7 @@ header {
     align-items: center;
     padding: 20px;
     background: var(--Primary-color);
+    border-bottom: 2px solid #53656a;
 }
 
 .ham-nav{
@@ -81,9 +82,23 @@ header {
     display: flex;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    & h3{
+        margin-right: 2rem;
+    }
+
+}
+
+
 .logo a{
     text-decoration: none;
     color: white;
+    
 
 & h3{
     background-color: var(--Secondary-color);
@@ -136,10 +151,12 @@ header {
     }
 }
 
+.hamburger{
+    display: none;
+}
+
 
 nav {
-    
-    display: none;
     & ul{
         list-style: none;
         display: flex;
@@ -163,6 +180,9 @@ nav {
 }
 
 .hero-content{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 32px;
     grid-column: 2/3;
     grid-row: 2/2;
     background: white;
@@ -173,6 +193,10 @@ nav {
     z-index: 100;
     color: black;
     margin: 1.5rem;
+
+    .pro-pic{
+        width: 600px;
+    }
     
 }
 
@@ -204,19 +228,25 @@ main {
 .categories{
     display: grid;
     gap: 1rem;
-    grid-template-columns: 1fr;
-    padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
     
     .c-cards {
-    background: #e36414;
     text-align: center;
     align-self: center;
     height: 400px;
-    min-width: 300px;
-    max-width: 500px;
-    border-radius: 8px;
+    min-width: 200px;
+    max-width: 480px;
+    border-radius: 32px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
     align-content: center;
+    &:hover{
+         transform: translateY(-5px);
+    }
+
+
+ 
  
 
     .cards-overlay{
@@ -224,9 +254,10 @@ main {
         background-size: cover;
         height: 400px;
         align-content: center;
-        border-radius: 8px;
+        border-radius: 32px;
         transition: background-color 0.5s ease-in;
         transition: color 0.5s ease;
+        
 
     &:hover {
             background-color: rgba(0, 0, 0, 0.4);
@@ -290,54 +321,11 @@ footer {
     grid-column: 1/-1;
     align-content: center;
     justify-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--primary-accent);
 }
 
 /*-----Media--Query------*/
-@media (min-width:992px){
-        .categories{
-        padding: 60px;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        
-        .c-cards {
-            min-width: 400px;
-            max-width: 800px;
-        }      
 
+@media (max-width < 992px){
 
-        }
-    
-
-    .hamburger{
-        display: none;
-    }
-
-    .socials{
-            transform: translate(-200%);
-        }
-        nav{
-            display: block;
-        }
-
-        .c-cards{
-           border-radius: 50px;
-           transition: transform 0.2s ease;
-    &:hover{
-        transform: translateY(-5px);
-    }
-    }
-    
-
-    .hero-content{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 32px;
-
-        .pro-pic{
-            width: 600px;
-        }
-    }
 }
