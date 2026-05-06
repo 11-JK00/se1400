@@ -110,7 +110,20 @@ header {
 }
 
 }
+.fod-icon{
+    align-items: center;
+    justify-content: baseline;
+}
+.fod-icon img{
+    height: 3rem;
+    width: 3rem;
+    filter: invert();
 
+}
+
+.fod-icon img:hover{
+   transform: scale(1.2);
+}
 
 
 
@@ -137,7 +150,7 @@ header {
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     color:white;
     gap: 1em;
@@ -151,9 +164,7 @@ header {
     }
 }
 
-.hamburger{
-    display: none;
-}
+
 
 
 nav {
@@ -167,6 +178,7 @@ nav {
             text-decoration: none;
             color: white;
             font-weight: 400px;
+            font-size: 1.2rem;
 
             &:hover{
                 color: var(--secondary-accent);
@@ -195,6 +207,7 @@ nav {
     margin: 1.5rem;
 
     .pro-pic{
+        min-width: 100px;
         width: 600px;
     }
     
@@ -335,7 +348,7 @@ footer {
         display: none;
     }
     .hamburger{
-        display: block;
+        display: flex;
     }
 .categories{
     grid-column: 1fr;
